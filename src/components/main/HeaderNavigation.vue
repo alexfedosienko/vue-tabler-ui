@@ -69,9 +69,9 @@ export default {
   },
   methods: {
     routePush(navItem) {
+      this.navbarToggle = false;
       if (this.$route.name != navItem.to) {
         this.$router.push({ name: navItem.to });
-        this.navbarToggle = false;
       }
     },
   },

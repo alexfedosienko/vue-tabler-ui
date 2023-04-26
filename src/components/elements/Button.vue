@@ -1,6 +1,6 @@
 <template>
   <button class="btn" :class="rootClass" @click.prevent="clickHandler">
-    {{ text }}
+    <slot></slot>
   </button>
 </template>
 
@@ -8,11 +8,6 @@
 export default {
   name: "Button",
   props: {
-    text: {
-      type: String,
-      required: true,
-      default: "Button",
-    },
     color: {
       type: String | Boolean,
       default: false,

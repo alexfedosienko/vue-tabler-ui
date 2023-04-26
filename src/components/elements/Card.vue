@@ -8,7 +8,7 @@
     <div class="card-header" v-if="title">
       <h3 class="card-title">{{ title }}</h3>
     </div>
-    <div class="card-body">
+    <div class="card-body" :class="cardBodyClass">
       <slot></slot>
     </div>
   </div>
@@ -25,6 +25,9 @@ export default {
     headerImage: {
       type: String | Boolean,
       default: false,
+    },
+    cardBodyClass: {
+      type: String,
     },
   },
 };

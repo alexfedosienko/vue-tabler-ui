@@ -15,6 +15,13 @@ if (document.querySelector("head")) {
       href: "https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler.min.css",
     })
   );
+
+  document.querySelector("head").appendChild(
+    Object.assign(document.createElement("meta"), {
+      name: "viewport",
+      content: "width=device-width",
+    })
+  );
 }
 
 export default VueTablerUI;
