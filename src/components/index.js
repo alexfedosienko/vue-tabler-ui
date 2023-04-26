@@ -10,6 +10,8 @@ import Card from "./elements/Card.vue";
 import Button from "./elements/Button.vue";
 import ButtonList from "./elements/ButtonList.vue";
 
+import SelectInput from "./inputs/SelectInput.vue";
+
 import FloatInputText from "./inputs/float/InputText.vue";
 import FloatInputEmail from "./inputs/float/InputEmail.vue";
 import FloatInputPassword from "./inputs/float/InputPassword.vue";
@@ -28,6 +30,8 @@ export default {
   Card,
   Button,
   ButtonList,
+
+  SelectInput,
 
   FloatInputText,
   FloatInputEmail,
