@@ -5,6 +5,7 @@
       class="form-select"
       :class="{ 'is-invalid': invalid, 'is-valid': valid }"
       @input="onInput"
+      v-bind="$attrs"
     >
       <option
         v-for="(item, index) in items"
@@ -22,6 +23,7 @@
 <script>
 export default {
   name: "SelectInput",
+  inheritAttrs: false,
   props: {
     title: {
       type: String,

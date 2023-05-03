@@ -14,6 +14,7 @@ import SelectInput from "./inputs/SelectInput.vue";
 
 import FloatInputText from "./inputs/float/InputText.vue";
 import FloatInputEmail from "./inputs/float/InputEmail.vue";
+import FloatInputPhone from "./inputs/float/InputPhone.vue";
 import FloatInputPassword from "./inputs/float/InputPassword.vue";
 
 import ToggleSwitch from "./inputs/ToggleSwitch.vue";
@@ -35,6 +36,7 @@ export default {
 
   FloatInputText,
   FloatInputEmail,
+  FloatInputPhone,
   FloatInputPassword,
 
   ToggleSwitch,

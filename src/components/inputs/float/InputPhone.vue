@@ -2,7 +2,7 @@
   <div class="form-floating">
     <input
       v-bind="$attrs"
-      type="email"
+      type="text"
       class="form-control"
       :class="{ 'is-invalid': invalid, 'is-valid': valid }"
       :value="value"
@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: "FloatInputEmail",
+  name: "FloatInputPhone",
   inheritAttrs: false,
   props: {
     title: {

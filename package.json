@@ -22,5 +22,9 @@
     "rollup-plugin-uglify": "^6.0.4",
     "rollup-plugin-vue2": "^0.8.1",
     "sass": "^1.57.1"
-  }
+  },
+  "peerDependencies": {
+    "v-mask": "^2.3.0"
+  },
+  "dependencies": {}
 }

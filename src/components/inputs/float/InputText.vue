@@ -1,6 +1,7 @@
 <template>
   <div class="form-floating">
     <input
+      v-bind="$attrs"
       type="text"
       class="form-control"
       :class="{ 'is-invalid': invalid, 'is-valid': valid }"
@@ -15,6 +16,7 @@
 <script>
 export default {
   name: "FloatInputText",
+  inheritAttrs: false,
   props: {
     title: {
       type: String,

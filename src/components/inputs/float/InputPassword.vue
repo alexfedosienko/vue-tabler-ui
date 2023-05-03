@@ -1,6 +1,7 @@
 <template>
   <div class="form-floating">
     <input
+      v-bind="$attrs"
       type="password"
       class="form-control"
       :class="{ 'is-invalid': invalid, 'is-valid': valid }"
@@ -16,6 +17,7 @@
 <script>
 export default {
   name: "FloatInputPassword",
+  inheritAttrs: false,
   props: {
     title: {
       type: String,
