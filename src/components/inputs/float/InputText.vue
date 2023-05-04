@@ -1,5 +1,5 @@
 <template>
-  <div class="form-floating">
+  <div class="form-floating" :class="{ 'input-icon': loading }">
     <input
       v-bind="$attrs"
       type="text"
@@ -10,6 +10,13 @@
     />
     <label for="floating-input">{{ title }}</label>
     <div class="invalid-feedback" v-if="message">message</div>
+
+    <span class="input-icon-addon" v-if="loading">
+      <div
+        class="spinner-border spinner-border-sm text-muted"
+        role="status"
+      ></div>
+    </span>
   </div>
 </template>
 
@@ -31,6 +38,10 @@ export default {
       default: () => false,
     },
     valid: {
+      type: Boolean,
+      default: () => false,
+    },
+    loading: {
       type: Boolean,
       default: () => false,
     },

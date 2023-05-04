@@ -47,6 +47,9 @@ export default {
       default: () => false,
     },
     value: {},
+    message: {
+      type: String
+    }
   },
   methods: {
     onInput(event) {
