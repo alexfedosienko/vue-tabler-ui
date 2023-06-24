@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="form-label">Select</div>
+    <div class="form-label">{{ title }}</div>
     <select
       class="form-select"
       :class="{ 'is-invalid': invalid, 'is-valid': valid }"
@@ -48,8 +48,8 @@ export default {
     },
     value: {},
     message: {
-      type: String
-    }
+      type: String,
+    },
   },
   methods: {
     onInput(event) {
